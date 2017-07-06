@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="韦炎午">
-    <title>标签: hexo - 韦炎午</title>
+    <title>标签: 多线程 - 韦炎午</title>
     <meta name="author" content="韦炎午">
     
     
@@ -14,7 +14,7 @@
     <meta name="description" content="韦炎午">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="韦炎午">
-<meta property="og:url" content="https://devwyw.github.io/tags/hexo/index.html">
+<meta property="og:url" content="https://devwyw.github.io/tags/多线程/index.html">
 <meta property="og:site_name" content="韦炎午">
 <meta property="og:description" content="韦炎午">
 <meta name="twitter:card" content="summary">
@@ -172,13 +172,13 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
-                        <a class="link-unstyled" href="/2017/07/06/hexo-tranquilpeak/">
-                            hexo+tranquilpeak
+                        <a class="link-unstyled" href="/2017/07/06/iosdxc/">
+                            iOS多线程
                         </a>
                     
                 </h1>
                 <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2017-07-06T09:40:11+08:00">
+    <time itemprop="datePublished" datetime="2017-07-06T10:57:31+08:00">
 	
 		    7月 06, 2017
     	
@@ -189,26 +189,23 @@
             </div>
             
                 <div class="postShorten-content" itemprop="articleBody">
-                    <h1 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">https://nodejs.org/en/</div><div class="line">下载最新版安装</div></pre></td></tr></table></figure>
-<h1 id="安装配置hexo"><a href="#安装配置hexo" class="headerlink" title="安装配置hexo"></a>安装配置hexo</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div><div class="line">$ hexo</div></pre></td></tr></table></figure>
+                    <h1 id="iOS多线程-概念"><a href="#iOS多线程-概念" class="headerlink" title="iOS多线程-概念"></a>iOS多线程-概念</h1><p><img src="http://upload-images.jianshu.io/upload_images/814422-bd235b9274510615.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <blockquote>
-<p>参考：<a href="http://www.jianshu.com/p/e99ed60390a8" target="_blank" rel="external">http://www.jianshu.com/p/e99ed60390a8</a></p>
+<p>参考：<a href="http://www.jianshu.com/p/f536f9a17d90?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=pc_all_hots&amp;utm_source=recommendation" target="_blank" rel="external">http://www.jianshu.com/p/f536f9a17d90?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=pc_all_hots&amp;utm_source=recommendation</a></p>
 </blockquote>
-<h1 id="初始化博客"><a href="#初始化博客" class="headerlink" title="初始化博客"></a>初始化博客</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo init wywdev</div><div class="line">cd wywdev</div><div class="line">npm install</div></pre></td></tr></table></figure>
-<h1 id="修改-config-yml文件"><a href="#修改-config-yml文件" class="headerlink" title="修改_config.yml文件"></a>修改_config.yml文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">title: devwyw</div><div class="line">subtitle: devwyw</div><div class="line">description: devwyw</div><div class="line">author: devwyw</div><div class="line">language: zh-cn</div><div class="line">timezone: Asia/Shanghai</div><div class="line"></div><div class="line"></div><div class="line">url: https://devwyw.github.io/</div><div class="line"></div><div class="line"></div><div class="line">theme: tranquilpeak</div><div class="line">post_assert_folder: true</div><div class="line"></div><div class="line">deploy:</div><div class="line">	type: git</div><div class="line">	repo: https://github.com/devwyw/devwyw.github.io.git</div><div class="line">	branch: master</div></pre></td></tr></table></figure>
+<h1 id="iOS多线程-GCD"><a href="#iOS多线程-GCD" class="headerlink" title="iOS多线程-GCD"></a>iOS多线程-GCD</h1><p><img src="http://upload-images.jianshu.io/upload_images/814422-c7ef1c129df8db69.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <blockquote>
-<p>参考：<a href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/developer.md#bower-dependencies" target="_blank" rel="external">https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/developer.md#bower-dependencies</a></p>
+<p>参考：<a href="http://www.jianshu.com/p/6f6e995c3f7a" target="_blank" rel="external">http://www.jianshu.com/p/6f6e995c3f7a</a></p>
+<p>参考：<a href="http://www.jianshu.com/p/cbaeea5368b1" target="_blank" rel="external">http://www.jianshu.com/p/cbaeea5368b1</a></p>
 </blockquote>
-<h1 id="替换成tranquilpeak皮肤"><a href="#替换成tranquilpeak皮肤" class="headerlink" title="替换成tranquilpeak皮肤"></a>替换成tranquilpeak皮肤</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak.git</div><div class="line"></div><div class="line">cd /Users/zerotech/web/wywdev/themes/tranquilpeak</div><div class="line"></div><div class="line">theme: tranquilpeak</div><div class="line">post_assert_folder: true</div><div class="line"></div><div class="line">npm install hexo-cli -g</div><div class="line"></div><div class="line">npm install grunt-cli -g</div><div class="line"></div><div class="line">npm install bower -g</div><div class="line"></div><div class="line">npm install</div><div class="line"></div><div class="line">bower install</div><div class="line"></div><div class="line">grunt build</div></pre></td></tr></table></figure>
-<h1 id="生成静态页面，本地预览和发布"><a href="#生成静态页面，本地预览和发布" class="headerlink" title="生成静态页面，本地预览和发布"></a>生成静态页面，本地预览和发布</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">cd /Users/zerotech/web/wywdev</div><div class="line"></div><div class="line">hexo generate</div><div class="line"></div><div class="line">hexo server</div><div class="line"></div><div class="line">http://localhost:4000/</div><div class="line"></div><div class="line">hexo deploy</div><div class="line"></div><div class="line">npm install hexo-deployer-git --save</div><div class="line"></div><div class="line">hexo deploy</div></pre></td></tr></table></figure>
-<h1 id="新建一篇文章"><a href="#新建一篇文章" class="headerlink" title="新建一篇文章"></a>新建一篇文章</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new &quot;文章标题&quot;</div></pre></td></tr></table></figure>
-<h1 id="新建页面"><a href="#新建页面" class="headerlink" title="新建页面"></a>新建页面</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new page &quot;pageName&quot;</div></pre></td></tr></table></figure>
+<p>iOS多线程–彻底学会多线程之『GCD』<br>iOS多线程–彻底学会多线程之『NSOperation』<br>iOS多线程–彻底学会多线程之『RunLoop』</p>
+
                     
                         
                     
                     
                         <p>
-                            <a href="/2017/07/06/hexo-tranquilpeak/#post-footer" class="postShorten-excerpt_link link">
+                            <a href="/2017/07/06/iosdxc/#post-footer" class="postShorten-excerpt_link link">
                                 评论和共享
                             </a>
                         </p>

@@ -6,24 +6,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="韦炎午">
-    <title>iOS 网络篇 -- 思维导图 - 韦炎午</title>
+    <title>iOS多线程 - 韦炎午</title>
     <meta name="author" content="韦炎午">
     
     
     
-    <meta name="description" content="最近看一本iOS相关的书籍《iOS网络高级编程》，一本关于iOS开发的基础知识书籍。里面详细讲解iOS中的HTTP交互方式，主要以请求响应，安全，负载解析，性能优化等详细介绍iOS中的一些基本网络开发的基本事项。其中还是使用NSURLConnect的API。 但目前大多数应用依然使用的是NSURLConnect作为网络开发的API。典型的案例就是AFNetworking。 我将该书的内容用思维导图">
-<meta name="keywords" content="网络">
+    <meta name="description" content="iOS多线程-概念  参考：http://www.jianshu.com/p/f536f9a17d90?utm_campaign=maleskine&amp;amp;utm_content=note&amp;amp;utm_medium=pc_all_hots&amp;amp;utm_source=recommendation  iOS多线程-GCD  参考：http://www.jianshu.com/p/6f6e99">
+<meta name="keywords" content="多线程">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="iOS 网络篇 -- 思维导图">
-<meta property="og:url" content="https://devwyw.github.io/2017/07/06/iosnetswdt/index.html">
+<meta property="og:title" content="iOS多线程">
+<meta property="og:url" content="https://devwyw.github.io/2017/07/06/iosdxc/index.html">
 <meta property="og:site_name" content="韦炎午">
-<meta property="og:description" content="最近看一本iOS相关的书籍《iOS网络高级编程》，一本关于iOS开发的基础知识书籍。里面详细讲解iOS中的HTTP交互方式，主要以请求响应，安全，负载解析，性能优化等详细介绍iOS中的一些基本网络开发的基本事项。其中还是使用NSURLConnect的API。 但目前大多数应用依然使用的是NSURLConnect作为网络开发的API。典型的案例就是AFNetworking。 我将该书的内容用思维导图">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1108981-5c379660c1c0278e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-07-06T02:27:38.000Z">
+<meta property="og:description" content="iOS多线程-概念  参考：http://www.jianshu.com/p/f536f9a17d90?utm_campaign=maleskine&amp;amp;utm_content=note&amp;amp;utm_medium=pc_all_hots&amp;amp;utm_source=recommendation  iOS多线程-GCD  参考：http://www.jianshu.com/p/6f6e99">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/814422-bd235b9274510615.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/814422-c7ef1c129df8db69.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-07-06T03:06:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="iOS 网络篇 -- 思维导图">
-<meta name="twitter:description" content="最近看一本iOS相关的书籍《iOS网络高级编程》，一本关于iOS开发的基础知识书籍。里面详细讲解iOS中的HTTP交互方式，主要以请求响应，安全，负载解析，性能优化等详细介绍iOS中的一些基本网络开发的基本事项。其中还是使用NSURLConnect的API。 但目前大多数应用依然使用的是NSURLConnect作为网络开发的API。典型的案例就是AFNetworking。 我将该书的内容用思维导图">
-<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1108981-5c379660c1c0278e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:title" content="iOS多线程">
+<meta name="twitter:description" content="iOS多线程-概念  参考：http://www.jianshu.com/p/f536f9a17d90?utm_campaign=maleskine&amp;amp;utm_content=note&amp;amp;utm_medium=pc_all_hots&amp;amp;utm_source=recommendation  iOS多线程-GCD  参考：http://www.jianshu.com/p/6f6e99">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/814422-bd235b9274510615.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
     
     
         
@@ -173,12 +174,12 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title" itemprop="headline">
-            iOS 网络篇 -- 思维导图
+            iOS多线程
         </h1>
     
     
         <div class="post-meta">
-    <time itemprop="datePublished" datetime="2017-07-06T10:18:44+08:00">
+    <time itemprop="datePublished" datetime="2017-07-06T10:57:31+08:00">
 	
 		    7月 06, 2017
     	
@@ -191,9 +192,16 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <p>最近看一本iOS相关的书籍<a href="http://product.dangdang.com/23533049.html" target="_blank" rel="external">《iOS网络高级编程》</a>，一本关于iOS开发的基础知识书籍。里面详细讲解iOS中的HTTP交互方式，主要以请求响应，安全，负载解析，性能优化等详细介绍iOS中的一些基本网络开发的基本事项。其中还是使用NSURLConnect的API。 但目前大多数应用依然使用的是NSURLConnect作为网络开发的API。典型的案例就是AFNetworking。</p>
-<p>我将该书的内容用思维导图的形式做了整理，如下：</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1108981-5c379660c1c0278e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+            <h1 id="iOS多线程-概念"><a href="#iOS多线程-概念" class="headerlink" title="iOS多线程-概念"></a>iOS多线程-概念</h1><p><img src="http://upload-images.jianshu.io/upload_images/814422-bd235b9274510615.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<blockquote>
+<p>参考：<a href="http://www.jianshu.com/p/f536f9a17d90?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=pc_all_hots&amp;utm_source=recommendation" target="_blank" rel="external">http://www.jianshu.com/p/f536f9a17d90?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=pc_all_hots&amp;utm_source=recommendation</a></p>
+</blockquote>
+<h1 id="iOS多线程-GCD"><a href="#iOS多线程-GCD" class="headerlink" title="iOS多线程-GCD"></a>iOS多线程-GCD</h1><p><img src="http://upload-images.jianshu.io/upload_images/814422-c7ef1c129df8db69.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<blockquote>
+<p>参考：<a href="http://www.jianshu.com/p/6f6e995c3f7a" target="_blank" rel="external">http://www.jianshu.com/p/6f6e995c3f7a</a></p>
+<p>参考：<a href="http://www.jianshu.com/p/cbaeea5368b1" target="_blank" rel="external">http://www.jianshu.com/p/cbaeea5368b1</a></p>
+</blockquote>
+<p>iOS多线程–彻底学会多线程之『GCD』<br>iOS多线程–彻底学会多线程之『NSOperation』<br>iOS多线程–彻底学会多线程之『RunLoop』</p>
 
             
         </div>
@@ -203,7 +211,7 @@
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">标签</span><br/>
                 
-    <a class="tag tag--primary tag--small t-link" href="/tags/网络/">网络</a>
+    <a class="tag tag--primary tag--small t-link" href="/tags/多线程/">多线程</a>
 
             </div>
         
@@ -213,7 +221,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/07/06/zbswdt/"  data-tooltip="直播思维导图">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -221,7 +229,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/07/06/uikitkuangjia/" data-tooltip="UIKit框架">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/07/06/zbswdt/" data-tooltip="直播思维导图">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                     <i class="fa fa-angle-right"></i>
@@ -239,7 +247,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://devwyw.github.io/2017/07/06/iosnetswdt/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://devwyw.github.io/2017/07/06/iosdxc/">
                     <i class="fa fa-facebook-official"></i>
                 </a>
             </li>
@@ -247,7 +255,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://devwyw.github.io/2017/07/06/iosnetswdt/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://devwyw.github.io/2017/07/06/iosdxc/">
                     <i class="fa fa-twitter"></i>
                 </a>
             </li>
@@ -255,7 +263,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://devwyw.github.io/2017/07/06/iosnetswdt/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://devwyw.github.io/2017/07/06/iosdxc/">
                     <i class="fa fa-google-plus"></i>
                 </a>
             </li>
@@ -263,7 +271,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://devwyw.github.io/2017/07/06/iosnetswdt/">
+                <a class="post-action-btn btn btn--default" target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://devwyw.github.io/2017/07/06/iosdxc/">
                     <i class="fa fa-weibo"></i>
                 </a>
             </li>
@@ -271,7 +279,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=https://devwyw.github.io/2017/07/06/iosnetswdt/&amp;title=iOS 网络篇 -- 思维导图">
+                <a class="post-action-btn btn btn--default" target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=https://devwyw.github.io/2017/07/06/iosdxc/&amp;title=iOS多线程">
                     <i class="fa fa-qq"></i>
                 </a>
             </li>
@@ -279,7 +287,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://devwyw.github.io/2017/07/06/iosnetswdt/">
+                <a class="post-action-btn btn btn--default" target="new" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://devwyw.github.io/2017/07/06/iosdxc/">
                     <i class="fa fa-star"></i>
                 </a>
             </li>
@@ -319,7 +327,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/07/06/zbswdt/"  data-tooltip="直播思维导图">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -327,7 +335,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/07/06/uikitkuangjia/" data-tooltip="UIKit框架">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/07/06/zbswdt/" data-tooltip="直播思维导图">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                     <i class="fa fa-angle-right"></i>
@@ -345,7 +353,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://devwyw.github.io/2017/07/06/iosnetswdt/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://devwyw.github.io/2017/07/06/iosdxc/">
                     <i class="fa fa-facebook-official"></i>
                 </a>
             </li>
@@ -353,7 +361,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://devwyw.github.io/2017/07/06/iosnetswdt/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://devwyw.github.io/2017/07/06/iosdxc/">
                     <i class="fa fa-twitter"></i>
                 </a>
             </li>
@@ -361,7 +369,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://devwyw.github.io/2017/07/06/iosnetswdt/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://devwyw.github.io/2017/07/06/iosdxc/">
                     <i class="fa fa-google-plus"></i>
                 </a>
             </li>
@@ -369,7 +377,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://devwyw.github.io/2017/07/06/iosnetswdt/">
+                <a class="post-action-btn btn btn--default" target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://devwyw.github.io/2017/07/06/iosdxc/">
                     <i class="fa fa-weibo"></i>
                 </a>
             </li>
@@ -377,7 +385,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=https://devwyw.github.io/2017/07/06/iosnetswdt/&amp;title=iOS 网络篇 -- 思维导图">
+                <a class="post-action-btn btn btn--default" target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=https://devwyw.github.io/2017/07/06/iosdxc/&amp;title=iOS多线程">
                     <i class="fa fa-qq"></i>
                 </a>
             </li>
@@ -385,7 +393,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://devwyw.github.io/2017/07/06/iosnetswdt/">
+                <a class="post-action-btn btn btn--default" target="new" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://devwyw.github.io/2017/07/06/iosdxc/">
                     <i class="fa fa-star"></i>
                 </a>
             </li>
@@ -410,7 +418,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://devwyw.github.io/2017/07/06/iosnetswdt/">
+                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://devwyw.github.io/2017/07/06/iosdxc/">
                     <i class="fa fa-facebook-official"></i><span>分享到 Facebook</span>
                 </a>
             </li>
@@ -418,7 +426,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://devwyw.github.io/2017/07/06/iosnetswdt/">
+                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://devwyw.github.io/2017/07/06/iosdxc/">
                     <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
                 </a>
             </li>
@@ -426,7 +434,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://devwyw.github.io/2017/07/06/iosnetswdt/">
+                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://devwyw.github.io/2017/07/06/iosdxc/">
                     <i class="fa fa-google-plus"></i><span>分享到 Google+</span>
                 </a>
             </li>
@@ -434,7 +442,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://devwyw.github.io/2017/07/06/iosnetswdt/">
+                <a class="share-option-btn" target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://devwyw.github.io/2017/07/06/iosdxc/">
                     <i class="fa fa-weibo"></i><span>分享到 Weibo</span>
                 </a>
             </li>
@@ -442,7 +450,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=https://devwyw.github.io/2017/07/06/iosnetswdt/&amp;title=iOS 网络篇 -- 思维导图">
+                <a class="share-option-btn" target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=https://devwyw.github.io/2017/07/06/iosdxc/&amp;title=iOS多线程">
                     <i class="fa fa-qq"></i><span>分享到 QQ</span>
                 </a>
             </li>
@@ -450,7 +458,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://devwyw.github.io/2017/07/06/iosnetswdt/">
+                <a class="share-option-btn" target="new" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://devwyw.github.io/2017/07/06/iosdxc/">
                     <i class="fa fa-star"></i><span>分享到 Qzone</span>
                 </a>
             </li>
