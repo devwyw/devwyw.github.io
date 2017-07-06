@@ -6,30 +6,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="韦炎午">
-    <title>思维导图：iOS研发知识与能力体系 - 韦炎午</title>
+    <title>UIKit框架 - 韦炎午</title>
     <meta name="author" content="韦炎午">
     
     
     
-    <meta name="description" content="这个题目很大，肯定列不完全的，欢迎各位朋友留言补充。 完整的思维导图超大，拆分来发了。 首先是总纲：  1.iOS开发 2.开发支持 3.设计与质量 4.项目处理能力 5.学习与培训能力 6.市场竞争意识 其实省略的“产品熟悉度”一项也非常重要，它决定了你在开发团队中的地位。 突然发现要懂那么多东西会不会很苦逼呢？呵，不是所有人都必须懂那么多，但要做到管理岗位，这些都可以学学。">
-<meta name="keywords" content="iOS">
+    <meta name="description" content="应用程序可以通过三种方式使用UIKit创建界面  在用户界面工具（interface Buidler）从对象库里 拖拽窗口，视图或者其他的对象使用。  用代码创建  通过继承UIView类或间接继承UIView类实现自定义用户界面  在图中可以看出，responder 类是图中最大分支的根类，UIResponder为处理响应事件和响应链 定义了界面和默认行为。 当用户用手指滚动列表或者在虚拟键盘上">
+<meta name="keywords" content="UIKit">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="思维导图：iOS研发知识与能力体系">
-<meta property="og:url" content="https://devwyw.github.io/2017/07/05/ioszstx/index.html">
+<meta property="og:title" content="UIKit框架">
+<meta property="og:url" content="https://devwyw.github.io/2017/07/06/uikitkuangjia/index.html">
 <meta property="og:site_name" content="韦炎午">
-<meta property="og:description" content="这个题目很大，肯定列不完全的，欢迎各位朋友留言补充。 完整的思维导图超大，拆分来发了。 首先是总纲：  1.iOS开发 2.开发支持 3.设计与质量 4.项目处理能力 5.学习与培训能力 6.市场竞争意识 其实省略的“产品熟悉度”一项也非常重要，它决定了你在开发团队中的地位。 突然发现要懂那么多东西会不会很苦逼呢？呵，不是所有人都必须懂那么多，但要做到管理岗位，这些都可以学学。">
-<meta property="og:image" content="http://img4.07net01.com/upload/images/2015/02/18/1488806180454301.png">
-<meta property="og:image" content="http://img4.07net01.com/upload/images/2015/02/18/1488806180454302.png">
-<meta property="og:image" content="http://img4.07net01.com/upload/images/2015/02/18/1488806180454303.png">
-<meta property="og:image" content="http://img4.07net01.com/upload/images/2015/02/18/1488806180454304.png">
-<meta property="og:image" content="http://img4.07net01.com/upload/images/2015/02/18/1488806180454305.png">
-<meta property="og:image" content="http://img4.07net01.com/upload/images/2015/02/18/1488806180454306.png">
-<meta property="og:image" content="http://img4.07net01.com/upload/images/2015/02/18/1488806180454307.png">
-<meta property="og:updated_time" content="2017-07-06T01:38:30.000Z">
+<meta property="og:description" content="应用程序可以通过三种方式使用UIKit创建界面  在用户界面工具（interface Buidler）从对象库里 拖拽窗口，视图或者其他的对象使用。  用代码创建  通过继承UIView类或间接继承UIView类实现自定义用户界面  在图中可以看出，responder 类是图中最大分支的根类，UIResponder为处理响应事件和响应链 定义了界面和默认行为。 当用户用手指滚动列表或者在虚拟键盘上">
+<meta property="og:image" content="http://img.my.csdn.net/uploads/201210/18/1350528267_1570.jpg">
+<meta property="og:updated_time" content="2017-07-06T02:11:04.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="思维导图：iOS研发知识与能力体系">
-<meta name="twitter:description" content="这个题目很大，肯定列不完全的，欢迎各位朋友留言补充。 完整的思维导图超大，拆分来发了。 首先是总纲：  1.iOS开发 2.开发支持 3.设计与质量 4.项目处理能力 5.学习与培训能力 6.市场竞争意识 其实省略的“产品熟悉度”一项也非常重要，它决定了你在开发团队中的地位。 突然发现要懂那么多东西会不会很苦逼呢？呵，不是所有人都必须懂那么多，但要做到管理岗位，这些都可以学学。">
-<meta name="twitter:image" content="http://img4.07net01.com/upload/images/2015/02/18/1488806180454301.png">
+<meta name="twitter:title" content="UIKit框架">
+<meta name="twitter:description" content="应用程序可以通过三种方式使用UIKit创建界面  在用户界面工具（interface Buidler）从对象库里 拖拽窗口，视图或者其他的对象使用。  用代码创建  通过继承UIView类或间接继承UIView类实现自定义用户界面  在图中可以看出，responder 类是图中最大分支的根类，UIResponder为处理响应事件和响应链 定义了界面和默认行为。 当用户用手指滚动列表或者在虚拟键盘上">
+<meta name="twitter:image" content="http://img.my.csdn.net/uploads/201210/18/1350528267_1570.jpg">
     
     
         
@@ -179,14 +173,14 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title" itemprop="headline">
-            思维导图：iOS研发知识与能力体系
+            UIKit框架
         </h1>
     
     
         <div class="post-meta">
-    <time itemprop="datePublished" datetime="2017-07-05T23:57:17+08:00">
+    <time itemprop="datePublished" datetime="2017-07-06T10:07:26+08:00">
 	
-		    7月 05, 2017
+		    7月 06, 2017
     	
     </time>
     
@@ -197,18 +191,11 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <p>这个题目很大，肯定列不完全的，欢迎各位朋友留言补充。</p>
-<p>完整的思维导图超大，拆分来发了。</p>
-<p>首先是总纲：</p>
-<p><img src="http://img4.07net01.com/upload/images/2015/02/18/1488806180454301.png" alt=""></p>
-<h2 id="1-iOS开发"><a href="#1-iOS开发" class="headerlink" title="1.iOS开发"></a>1.iOS开发</h2><p><img src="http://img4.07net01.com/upload/images/2015/02/18/1488806180454302.png" alt=""></p>
-<h2 id="2-开发支持"><a href="#2-开发支持" class="headerlink" title="2.开发支持"></a>2.开发支持</h2><p><img src="http://img4.07net01.com/upload/images/2015/02/18/1488806180454303.png" alt=""></p>
-<h2 id="3-设计与质量"><a href="#3-设计与质量" class="headerlink" title="3.设计与质量"></a>3.设计与质量</h2><p><img src="http://img4.07net01.com/upload/images/2015/02/18/1488806180454304.png" alt=""></p>
-<h2 id="4-项目处理能力"><a href="#4-项目处理能力" class="headerlink" title="4.项目处理能力"></a>4.项目处理能力</h2><p><img src="http://img4.07net01.com/upload/images/2015/02/18/1488806180454305.png" alt=""></p>
-<h2 id="5-学习与培训能力"><a href="#5-学习与培训能力" class="headerlink" title="5.学习与培训能力"></a>5.学习与培训能力</h2><p><img src="http://img4.07net01.com/upload/images/2015/02/18/1488806180454306.png" alt=""></p>
-<h2 id="6-市场竞争意识"><a href="#6-市场竞争意识" class="headerlink" title="6.市场竞争意识"></a>6.市场竞争意识</h2><p><img src="http://img4.07net01.com/upload/images/2015/02/18/1488806180454307.png" alt=""></p>
-<p>其实省略的“产品熟悉度”一项也非常重要，它决定了你在开发团队中的地位。</p>
-<p>突然发现要懂那么多东西会不会很苦逼呢？呵，不是所有人都必须懂那么多，但要做到管理岗位，这些都可以学学。</p>
+            <p>应用程序可以通过三种方式使用UIKit创建界面<br>  在用户界面工具（interface Buidler）从对象库里 拖拽窗口，视图或者其他的对象使用。<br>  用代码创建<br>  通过继承UIView类或间接继承UIView类实现自定义用户界面</p>
+<p><img src="http://img.my.csdn.net/uploads/201210/18/1350528267_1570.jpg" alt=""></p>
+<p>在图中可以看出，responder 类是图中最大分支的根类，<br>UIResponder为处理响应事件和响应链 定义了界面和默认行为。</p>
+<p>当用户用手指滚动列表或者在虚拟键盘上输入时，<br>UIKit就生成事件传送给UIResponder响应链，<br>直到链中有对象处理这个事件。</p>
+<p>相应的核心对象，比如：UIApplication  ，UIWindow，UIView都直接或间接的从UIResponder继承。</p>
 
             
         </div>
@@ -218,7 +205,7 @@
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">标签</span><br/>
                 
-    <a class="tag tag--primary tag--small t-link" href="/tags/iOS/">iOS</a>
+    <a class="tag tag--primary tag--small t-link" href="/tags/UIKit/">UIKit</a>
 
             </div>
         
@@ -228,7 +215,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/07/06/hexo-tranquilpeak/"  data-tooltip="hexo+tranquilpeak">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -236,7 +223,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/07/06/hexo-tranquilpeak/" data-tooltip="hexo+tranquilpeak">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                     <i class="fa fa-angle-right"></i>
@@ -254,7 +241,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://devwyw.github.io/2017/07/05/ioszstx/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://devwyw.github.io/2017/07/06/uikitkuangjia/">
                     <i class="fa fa-facebook-official"></i>
                 </a>
             </li>
@@ -262,7 +249,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://devwyw.github.io/2017/07/05/ioszstx/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://devwyw.github.io/2017/07/06/uikitkuangjia/">
                     <i class="fa fa-twitter"></i>
                 </a>
             </li>
@@ -270,7 +257,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://devwyw.github.io/2017/07/05/ioszstx/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://devwyw.github.io/2017/07/06/uikitkuangjia/">
                     <i class="fa fa-google-plus"></i>
                 </a>
             </li>
@@ -278,7 +265,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://devwyw.github.io/2017/07/05/ioszstx/">
+                <a class="post-action-btn btn btn--default" target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://devwyw.github.io/2017/07/06/uikitkuangjia/">
                     <i class="fa fa-weibo"></i>
                 </a>
             </li>
@@ -286,7 +273,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=https://devwyw.github.io/2017/07/05/ioszstx/&amp;title=思维导图：iOS研发知识与能力体系">
+                <a class="post-action-btn btn btn--default" target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=https://devwyw.github.io/2017/07/06/uikitkuangjia/&amp;title=UIKit框架">
                     <i class="fa fa-qq"></i>
                 </a>
             </li>
@@ -294,7 +281,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://devwyw.github.io/2017/07/05/ioszstx/">
+                <a class="post-action-btn btn btn--default" target="new" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://devwyw.github.io/2017/07/06/uikitkuangjia/">
                     <i class="fa fa-star"></i>
                 </a>
             </li>
@@ -334,7 +321,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/07/06/hexo-tranquilpeak/"  data-tooltip="hexo+tranquilpeak">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -342,7 +329,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/07/06/hexo-tranquilpeak/" data-tooltip="hexo+tranquilpeak">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                     <i class="fa fa-angle-right"></i>
@@ -360,7 +347,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://devwyw.github.io/2017/07/05/ioszstx/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://devwyw.github.io/2017/07/06/uikitkuangjia/">
                     <i class="fa fa-facebook-official"></i>
                 </a>
             </li>
@@ -368,7 +355,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://devwyw.github.io/2017/07/05/ioszstx/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://devwyw.github.io/2017/07/06/uikitkuangjia/">
                     <i class="fa fa-twitter"></i>
                 </a>
             </li>
@@ -376,7 +363,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://devwyw.github.io/2017/07/05/ioszstx/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://devwyw.github.io/2017/07/06/uikitkuangjia/">
                     <i class="fa fa-google-plus"></i>
                 </a>
             </li>
@@ -384,7 +371,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://devwyw.github.io/2017/07/05/ioszstx/">
+                <a class="post-action-btn btn btn--default" target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://devwyw.github.io/2017/07/06/uikitkuangjia/">
                     <i class="fa fa-weibo"></i>
                 </a>
             </li>
@@ -392,7 +379,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=https://devwyw.github.io/2017/07/05/ioszstx/&amp;title=思维导图：iOS研发知识与能力体系">
+                <a class="post-action-btn btn btn--default" target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=https://devwyw.github.io/2017/07/06/uikitkuangjia/&amp;title=UIKit框架">
                     <i class="fa fa-qq"></i>
                 </a>
             </li>
@@ -400,7 +387,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://devwyw.github.io/2017/07/05/ioszstx/">
+                <a class="post-action-btn btn btn--default" target="new" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://devwyw.github.io/2017/07/06/uikitkuangjia/">
                     <i class="fa fa-star"></i>
                 </a>
             </li>
@@ -425,7 +412,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://devwyw.github.io/2017/07/05/ioszstx/">
+                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://devwyw.github.io/2017/07/06/uikitkuangjia/">
                     <i class="fa fa-facebook-official"></i><span>分享到 Facebook</span>
                 </a>
             </li>
@@ -433,7 +420,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://devwyw.github.io/2017/07/05/ioszstx/">
+                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://devwyw.github.io/2017/07/06/uikitkuangjia/">
                     <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
                 </a>
             </li>
@@ -441,7 +428,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://devwyw.github.io/2017/07/05/ioszstx/">
+                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://devwyw.github.io/2017/07/06/uikitkuangjia/">
                     <i class="fa fa-google-plus"></i><span>分享到 Google+</span>
                 </a>
             </li>
@@ -449,7 +436,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://devwyw.github.io/2017/07/05/ioszstx/">
+                <a class="share-option-btn" target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://devwyw.github.io/2017/07/06/uikitkuangjia/">
                     <i class="fa fa-weibo"></i><span>分享到 Weibo</span>
                 </a>
             </li>
@@ -457,7 +444,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=https://devwyw.github.io/2017/07/05/ioszstx/&amp;title=思维导图：iOS研发知识与能力体系">
+                <a class="share-option-btn" target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=https://devwyw.github.io/2017/07/06/uikitkuangjia/&amp;title=UIKit框架">
                     <i class="fa fa-qq"></i><span>分享到 QQ</span>
                 </a>
             </li>
@@ -465,7 +452,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://devwyw.github.io/2017/07/05/ioszstx/">
+                <a class="share-option-btn" target="new" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://devwyw.github.io/2017/07/06/uikitkuangjia/">
                     <i class="fa fa-star"></i><span>分享到 Qzone</span>
                 </a>
             </li>
